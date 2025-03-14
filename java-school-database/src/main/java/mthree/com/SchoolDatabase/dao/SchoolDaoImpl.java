@@ -150,8 +150,6 @@ public class SchoolDaoImpl implements SchoolDao {
         // Write a query to change the course description for course CS305 to "Advanced Python with Flask".
         // YOUR CODE STARTS HERE
 
-        //not specified if we're allowed to use the cid, so we have to retrieve it using a subquery
-        //cannot simply use select in where if we're updating the target table though
         String sql = """
             UPDATE course
             SET courseDesc = 'Advanced Python with Flask'
